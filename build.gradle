@@ -4,6 +4,8 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'groovy'
 
+sourceCompatibility = 1.8
+
 repositories {
     mavenCentral()
 }
@@ -11,6 +13,7 @@ repositories {
 dependencies {
     testImplementation group: 'org.spockframework', name: 'spock-core', version: '2.0-M5-groovy-3.0'
     testImplementation group: 'io.cucumber', name: 'cucumber-java', version: '6.10.3'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '6.10.3'
 }
 
 test {

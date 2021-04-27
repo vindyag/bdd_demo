@@ -12,9 +12,9 @@ class FizzBuzzSteps {
     def result
     def fizzBuzzGame
 
-    @Given("I'm logged in to Fizz-Buzz Game")
+    @Given("I am logged in")
     public void iMLoggedInToFizzBuzzGame() {
-        //login code
+        //login code would go here. not going to implement
     }
 
     @And("I start a fresh game with an upper bound of {int}")
@@ -30,9 +30,6 @@ class FizzBuzzSteps {
 
     @When("I play the Fizz-Buzz game")
     public void i_play_the_fizz_buzz_game() {
-        // Write code here that turns the phrase above into concrete actions
-        //result = fizzBuzzGame.play(upperBound)
-        //
         result = fizzBuzzGame.play()
     }
 

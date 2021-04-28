@@ -8,7 +8,6 @@ import io.cucumber.java.en.When
 
 class FizzBuzzSteps {
 
-    def upperBound
     def result
     def fizzBuzzGame
 
@@ -23,7 +22,7 @@ class FizzBuzzSteps {
     }
 
     @When("I play the Fizz-Buzz game")
-    public void i_play_the_fizz_buzz_game() {
+    public void iPlayTheFizzBuzzGame() {
         result = fizzBuzzGame.play()
     }
 

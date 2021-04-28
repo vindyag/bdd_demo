@@ -1,10 +1,15 @@
 package demo;
 
+import java.io.IOException;
+
+import demo.helper.ConfigurationLoader;
+
 public class FizzBuzzGame {
 
-    public String[] play() {
-        String[] response = new String[10];
-        for(int i=0;i<10;i++){
+    public String[] play() throws IOException {
+        Integer upperLimit = ConfigurationLoader.getUpperLimit();
+        String[] response = new String[upperLimit];
+        for(int i=0;i<upperLimit;i++){
             response[i] = playWithNumber(i+1);
         }
         return response;

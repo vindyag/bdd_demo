@@ -1,4 +1,4 @@
-package integration.steps
+package integration.demo.steps
 
 import demo.FizzBuzzGame
 import io.cucumber.java.en.And
@@ -15,12 +15,6 @@ class FizzBuzzSteps {
     @Given("I am logged in")
     public void iMLoggedInToFizzBuzzGame() {
         //login code would go here. not going to implement
-    }
-
-    @And("I start a fresh game with an upper bound of {int}")
-    public void iStartAFreshGameWithAnUpperBoundOf(int upperBoundInt) {
-        fizzBuzzGame = new FizzBuzzGame()
-        upperBound = upperBoundInt
     }
 
     @And("I start a fresh game")

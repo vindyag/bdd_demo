@@ -1,11 +1,11 @@
 package unit.demo
 
-import demo.FizzBuzzGame
+import demo.GameService
 import spock.lang.Specification
 
-class FizzBuzzGameSpec extends Specification{
+class GameServiceSpec extends Specification{
 
-    def fizzBuzzGame = new FizzBuzzGame()
+    def fizzBuzzGame = new GameService()
 
 /*    Given the number "1"
     When we run the number through fizzbuzz

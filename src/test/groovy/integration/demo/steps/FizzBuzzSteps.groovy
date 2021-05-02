@@ -11,18 +11,18 @@ class FizzBuzzSteps {
     def result
     def fizzBuzzGame
 
-    @Given("I am logged in")
-    void iMLoggedInToFizzBuzzGame() {
+    @Given("the user is logged in")
+    void theUserIsLoggedIn() {
         //login code would go here. not going to implement
     }
 
-    @And("I start a fresh game")
-    void iStartAFreshGame() {
+    @And("start a fresh game")
+    void startAFreshGame() {
         fizzBuzzGame = new GameService()
     }
 
-    @When("I play the Fizz-Buzz game")
-    void iPlayTheFizzBuzzGame() {
+    @When("user plays")
+    void userPlays() {
         result = fizzBuzzGame.play()
     }
 

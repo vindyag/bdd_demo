@@ -1,18 +1,16 @@
 package unit.demo
 
-import demo.GameService
+
+import demo.fizzbuzz.FizzBuzz
 import spock.lang.Specification
 
-class GameServiceSpec extends Specification{
+class FizzBuzzSpec extends Specification{
 
-    def fizzBuzzGame = new GameService()
+    def fizzBuzz = new FizzBuzz()
 
-/*    Given the number "1"
-    When we run the number through fizzbuzz
-    Then we should get back "1"*/
     def 'Get the number itself when the input is neither a multiple of 3 nor 5'(){
         when: 'play with the number'
-            def output = fizzBuzzGame.playWithNumber(num)
+            def output = fizzBuzz.playWithNumber(num)
         then: 'output the number itself'
             output == num as String
         where: 'input integers that are neither multiples of 3 nor 5'
@@ -21,7 +19,7 @@ class GameServiceSpec extends Specification{
 
     def 'Get Fizz when a multiple of 3 is provided'(){
         when: 'play with the number'
-            def output = fizzBuzzGame.playWithNumber(num)
+            def output = fizzBuzz.playWithNumber(num)
         then: 'output Fizz'
             output == 'Fizz'
         where: 'input integers that are multiples of 3'
@@ -30,7 +28,7 @@ class GameServiceSpec extends Specification{
 
     def 'Get Buzz when a multiple of 5 is provided'(){
         when: 'play with the number'
-            def output = fizzBuzzGame.playWithNumber(num)
+            def output = fizzBuzz.playWithNumber(num)
         then: 'output Buzz'
             output == 'Buzz'
         where: 'input integers that are multiples of 5'

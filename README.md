@@ -5,6 +5,6 @@ This repository is developed to demonstrate the proper use of BDD in conjunction
 - Cucumber
 - Spock
 
-![image](https://user-images.githubusercontent.com/13194412/163780907-b813598c-8616-4cfc-a323-9125c0b40b35.png)
+![bdd-image-blog](https://user-images.githubusercontent.com/13194412/164163025-11622b02-e6b4-4c25-a857-f80254a38271.png)
 
-You can refer the blog post x for more details.
+You can refer this blog post on [BDD](https://medium.com/@vindya.gunawardena/bdd-beyond-tdd-9d733c58bba7) for more details.
